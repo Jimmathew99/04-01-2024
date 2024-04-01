@@ -9,14 +9,68 @@ class SplashScreen extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
      // backgroundColor: Colors.teal,
-      body: Center(
-        child: FlutterLogo(
-          size: 100,
-          style: FlutterLogoStyle.stacked,
-          textColor: ,
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+
+        children: [
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
 
 
-        ),
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+          FlutterLogo(
+            size: 100,
+            style: FlutterLogoStyle.stacked,
+            textColor: Colors.black12,
+
+
+          ),
+        ],
+
       ),
     );
   }
