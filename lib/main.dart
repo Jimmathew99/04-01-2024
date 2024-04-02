@@ -1,22 +1,64 @@
+// // // import 'package:flutter/material.dart';
+// // // import 'package:flutter_screenutil/flutter_screenutil.dart';
+// // //
+// // // main() {
+// // //   runApp(const MyApp());
+// // // }
+// // //
+// // // class MyApp extends StatelessWidget {
+// // //   const MyApp({super.key});
+// // //
+// // //   @override
+// // //   Widget build(BuildContext context) {
+// // //     return ScreenUtilInit(
+// // //       splitScreenMode: true,
+// // //       minTextAdapt: true,
+// // //       designSize: const Size(360, 690),
+// // //       builder: (context, child) {
+// // //         return const MaterialApp();
+// // //       },
+// // //     );
+// // //   }
+// // // }
+// // import 'package:flutter/material.dart';
+// // import 'package:flutter_sample/view/spalsh_screen.dart';
+// // import 'package:flutter_screenutil/flutter_screenutil.dart';
+// // main(){
+// //   runApp(const MyApp());
+// // }
+// // class MyApp extends StatelessWidget {
+// //   const MyApp({super.key});
+// //
+// //   @override
+// //   Widget build(BuildContext context) {
+// //     return ScreenUtilInit(
+// //       splitScreenMode: true,
+// //       minTextAdapt: true,
+// //       designSize: const Size(360, 690),
+// //       builder: (context, child) {
+// //         return const MaterialApp(
+// //           home: SplashScreen(),
+// //         );
+// //       },
+// //     );
+// //   }
+// // }
+// //
 // import 'package:flutter/material.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
-//
-// main() {
+// main(){
 //   runApp(const MyApp());
 // }
-//
 // class MyApp extends StatelessWidget {
 //   const MyApp({super.key});
 //
 //   @override
 //   Widget build(BuildContext context) {
-//     return ScreenUtilInit(
-//       splitScreenMode: true,
+//     return const ScreenUtilInit(
+//       designSize: Size(360, 960),
 //       minTextAdapt: true,
-//       designSize: const Size(360, 690),
-//       builder: (context, child) {
-//         return const MaterialApp();
-//       },
+//       splitScreenMode: true,
+//
 //     );
 //   }
 // }
@@ -24,7 +66,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 main(){
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -32,14 +74,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
+       builder: (context, child) {
+         return const MaterialApp(
+           debugShowCheckedModeBanner: false,
+           home: SplashScreen()
+         );
+       },
+      designSize: const Size(360, 690),
       splitScreenMode: true,
       minTextAdapt: true,
-      designSize: const Size(360, 690),
-      builder: (context, child) {
-        return const MaterialApp(
-          home: SplashScreen(),
-        );
-      },
+
+
     );
+
+
+
   }
 }
