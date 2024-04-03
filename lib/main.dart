@@ -63,7 +63,9 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
+import 'package:flutter_sample/view/welcome_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 main(){
   runApp(MyApp());
@@ -76,8 +78,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return const MaterialApp(
-           debugShowCheckedModeBanner: false,
-           home: SplashScreen()
+           home: FirstPage()
          );
        },
       designSize: const Size(360, 690),
