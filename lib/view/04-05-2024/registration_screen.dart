@@ -15,7 +15,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.pinkAccent,
         title: Text("Register"),
         centerTitle: true,
         leading: Icon(Icons.arrow_back),
