@@ -66,6 +66,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample/view/04-05-2024/registration_screen.dart';
 import 'package:flutter_sample/view/04-05-2024/text_sample.dart';
 import 'package:flutter_sample/view/04-05-2024/textfield_sample.dart';
+import 'package:flutter_sample/view/04-06-2024/button.dart';
+import 'package:flutter_sample/view/04-06-2024/login_screen.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/welcome_screen.dart';
@@ -81,7 +83,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home: RegistrationScreen()
+           home: LoginScreen()
          );
        },
       designSize: const Size(360, 690),
