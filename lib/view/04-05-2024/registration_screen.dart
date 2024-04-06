@@ -122,18 +122,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ispasswordvisible = !ispasswordvisible;
                             });
                           },
-                          icon: Icon(Icons.visibility_off_rounded))
+                          icon: Icon(Icons.visibility))
                       : IconButton(
                           onPressed: () {
-                            ispasswordvisible = !ispasswordvisible;
+                            setState(() {
+                              ispasswordvisible = !ispasswordvisible;
+                            });
                           },
-                          icon: Icon(Icons.visibility)),
+                          icon: Icon(Icons.visibility_off)),
                   label: Text("Password"),
                   border: OutlineInputBorder(),
-                  hintText: "Password",
+                  hintText: "Enter your password",
                 ),
                 keyboardType: TextInputType.name,
-                obscureText: true,
+                obscureText: ispasswordvisible,
               ),
             ),
           )
