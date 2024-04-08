@@ -11,7 +11,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  var logincontroller = TextEditingController();
+  var passcontroller = TextEditingController();
+  var usercontroller = TextEditingController();
+  final loginkey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -23,64 +25,66 @@ class _LoginScreenState extends State<LoginScreen> {
           centerTitle: true,
         ),
         body: Form(
+          key: loginkey,
           child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  child:Lottie.asset('animations/loginanim.json'),
-                  width: 700,
-                  height: 500,
-                ),
-              SingleChildScrollView(
-                child: SizedBox(
-                width: 200.w,
+            child:
+            Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            SizedBox(
+            child: Lottie.asset('animations/loginanim2.json'),
+            width: 500.w,
+            height: 300.h,
+          ),
+          SingleChildScrollView(
+            child: SizedBox(
+              width: 600.w,
+              child: Padding(
+                padding: const EdgeInsets.all(20.0).r,
                 child: TextFormField(
-                  controller: logincontroller,
-                  style: TextStyle(
-                
-                  ),
-                  decoration: InputDecoration(
-                    label: Text("Username"),
-
-                
-                  ),
-
-                          
-                          
-                ),
-
-                          
-                          
-                          ),
-              ),
-            Padding(
-              padding: const EdgeInsets.all(20.0).r,
-              child: TextFormField(
+                  validator: (value) {
+                    if(value!.isEmpty){
+                      return("Please enter your username");
+                    }
+                    return null;
+                  },
+                    controller: usercontroller,
+                    style: TextStyle(),
                 decoration: InputDecoration(
-                  label: Text("Password"),
-
-
-
-
-                ),
+                    label: Text("Username"),
+                    prefixIcon: Icon(CupertinoIcons.person),
+                    border: OutlineInputBorder(),
+                    hintText: "Enter username"),
               ),
             ),
-            
-            
-            ElevatedButton(onPressed: () {
-            
-            }, child: Text("Login"))
-            
-                ]
-                ,
-            
-                ),
           ),
-        )
+        ),
+        Padding(
+          padding: const EdgeInsets.all(20.0).r,
+          child: TextFormField(
+            validator: (value) {
+              if(value!.isEmpty){
+                return("Please enter your password");
+              }
+              return null;
+            },
+            controller: passcontroller,
+            decoration: InputDecoration(
+              label: Text("Password"),
+              border: OutlineInputBorder(),
+              hintText: "Enter password",
+              prefixIcon: Icon(Icons.lock),
+            ),
+          ),
+        ),
+        TextButton(onPressed: () {}, child: Text("Forgot password?")),
+        ElevatedButton(onPressed: () {
+          if (loginkey.currentState!.validate()) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Success")));
+          }
+        }, child: Text("Login")),
+        ])),
+    )
     ,
-
     );
   }
 }
-

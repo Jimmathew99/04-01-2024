@@ -72,7 +72,7 @@ class _ButtonState extends State<Button> {
                         onPressed: () {
                           if (registrationkey.currentState!.validate()) {
                             ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(content: Text("Sucess")));
+                                SnackBar(content: Text("Success")));
                           }
                         },
                         child: Text("Already have an account?")),
