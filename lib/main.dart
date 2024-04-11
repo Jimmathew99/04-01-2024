@@ -77,6 +77,7 @@ import 'package:flutter_sample/view/04-09-2024/first_.dart';
 import 'package:flutter_sample/view/04-09-2024/form_sample.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
+import 'package:flutter_sample/view/splash_screendemo.dart';
 import 'package:flutter_sample/view/welcome_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 main(){
@@ -90,7 +91,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:First()
+           home:SplashScreenDemo()
          );
        },
       designSize: const Size(360, 690),
