@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:SplashScreenDemo()
+           home:FormSample()
          );
        },
       designSize: const Size(360, 690),
