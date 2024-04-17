@@ -75,6 +75,9 @@ import 'package:flutter_sample/view/04-08-2024/inkwell_sample.dart';
 import 'package:flutter_sample/view/04-08-2024/radio_sample.dart';
 import 'package:flutter_sample/view/04-09-2024/first_.dart';
 import 'package:flutter_sample/view/04-09-2024/form_sample.dart';
+import 'package:flutter_sample/view/04-17-2024/gridview_sample.dart';
+import 'package:flutter_sample/view/04-17-2024/table_sample.dart';
+import 'package:flutter_sample/view/04-17-2024/torch_sample.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/splash_screendemo.dart';
@@ -91,7 +94,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:FormSample()
+           home:GridViewSample()
          );
        },
       designSize: const Size(360, 690),

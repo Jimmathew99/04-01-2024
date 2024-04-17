@@ -15,7 +15,7 @@ class SplashScreenDemo extends StatefulWidget {
 class _SplashScreenDemoState extends State<SplashScreenDemo> {
   @override
   Widget build(BuildContext context) {
-    Timer(Durations.medium3, () { });
+
     return Scaffold(
       appBar: AppBar(),
       body: Column(
