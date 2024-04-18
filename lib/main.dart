@@ -78,6 +78,7 @@ import 'package:flutter_sample/view/04-09-2024/form_sample.dart';
 import 'package:flutter_sample/view/04-17-2024/gridview_sample.dart';
 import 'package:flutter_sample/view/04-17-2024/table_sample.dart';
 import 'package:flutter_sample/view/04-17-2024/torch_sample.dart';
+import 'package:flutter_sample/view/04-18-2024/screen_one.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/splash_screendemo.dart';
@@ -94,7 +95,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:GridViewSample()
+           home: ScreenOne()
          );
        },
       designSize: const Size(360, 690),
