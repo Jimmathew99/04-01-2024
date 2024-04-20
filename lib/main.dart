@@ -81,6 +81,10 @@ import 'package:flutter_sample/view/04-17-2024/torch_sample.dart';
 import 'package:flutter_sample/view/04-18-2024/screen_one.dart';
 import 'package:flutter_sample/view/04-19-2024/tab-barsample.dart';
 import 'package:flutter_sample/view/04-19-2024/video_playsample.dart';
+import 'package:flutter_sample/view/04-20-2024/alerts_sample.dart';
+import 'package:flutter_sample/view/04-20-2024/stack_ex1.dart';
+import 'package:flutter_sample/view/04-20-2024/stack_sample.dart';
+import 'package:flutter_sample/view/04-20-2024/toast_sample.dart';
 import 'package:flutter_sample/view/04-20-2024/whatsapp_sample.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
@@ -98,7 +102,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home: WhatsAppSample()
+           home:AlertSample()
          );
        },
       designSize: const Size(360, 690),

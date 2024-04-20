@@ -40,6 +40,7 @@ dependencies:
   torch_light: ^1.0.0
   video_player: ^2.8.6
   chewie: ^1.8.1
+  fluttertoast: ^8.2.5
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,7 @@ flutter:
     - animations/projectanim1.json
     - videos/video1.mp4
     - videos/video2.mp4
+    - images/nyc.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
