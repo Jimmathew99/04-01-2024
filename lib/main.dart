@@ -86,6 +86,8 @@ import 'package:flutter_sample/view/04-20-2024/stack_ex1.dart';
 import 'package:flutter_sample/view/04-20-2024/stack_sample.dart';
 import 'package:flutter_sample/view/04-20-2024/toast_sample.dart';
 import 'package:flutter_sample/view/04-20-2024/whatsapp_sample.dart';
+import 'package:flutter_sample/view/04-22-2024/sensordate_samp.dart';
+import 'package:flutter_sample/view/04-22-2024/url_launchersamp.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/splash_screendemo.dart';
@@ -102,7 +104,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:AlertSample()
+           home:UrlSample()
          );
        },
       designSize: const Size(360, 690),
