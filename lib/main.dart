@@ -88,6 +88,11 @@ import 'package:flutter_sample/view/04-20-2024/toast_sample.dart';
 import 'package:flutter_sample/view/04-20-2024/whatsapp_sample.dart';
 import 'package:flutter_sample/view/04-22-2024/sensordate_samp.dart';
 import 'package:flutter_sample/view/04-22-2024/url_launchersamp.dart';
+import 'package:flutter_sample/view/04-29-2024/bottom_navigation_bar_example.dart';
+import 'package:flutter_sample/view/04-29-2024/charts_example.dart';
+import 'package:flutter_sample/view/04-29-2024/exapnded_example.dart';
+import 'package:flutter_sample/view/04-29-2024/flexible_example.dart';
+import 'package:flutter_sample/view/04-29-2024/popup_menu.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/splash_screendemo.dart';
@@ -104,7 +109,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:UrlSample()
+           home:BottomNavigationBarExample()
          );
        },
       designSize: const Size(360, 690),
