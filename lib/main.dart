@@ -93,6 +93,7 @@ import 'package:flutter_sample/view/04-29-2024/charts_example.dart';
 import 'package:flutter_sample/view/04-29-2024/exapnded_example.dart';
 import 'package:flutter_sample/view/04-29-2024/flexible_example.dart';
 import 'package:flutter_sample/view/04-29-2024/popup_menu.dart';
+import 'package:flutter_sample/view/04-29-2024/quiz_app.dart';
 import 'package:flutter_sample/view/first_page.dart';
 import 'package:flutter_sample/view/spalsh_screen.dart';
 import 'package:flutter_sample/view/splash_screendemo.dart';
@@ -109,7 +110,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
        builder: (context, child) {
          return MaterialApp(
-           home:BottomNavigationBarExample()
+           home:QuizPage()
          );
        },
       designSize: const Size(360, 690),
